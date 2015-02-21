@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff" >
+
+        <!-- Header  Starts -->
+
+        <LinearLayout
+            android:id="@+id/header"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@layout/header_gradient"
+            android:paddingBottom="5dip"
+            android:paddingTop="5dip" >
+
+            <!-- Logo Start -->
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:contentDescription="@string/Nothing"
+                android:src="@drawable/logo" />
+            <!-- Logo Ends -->
+        </LinearLayout>
+        <!-- Header Ends -->
+        <!-- Footer Start -->
+
+        <LinearLayout
+            android:id="@+id/footer"
+            android:layout_width="fill_parent"
+            android:layout_height="45dip"
+            android:layout_alignParentBottom="true"
+            android:background="@layout/footer_repeat"
+            android:orientation="vertical" >
+        </LinearLayout>
+        <!-- Footer Ends -->
+
+
+        <!-- Registration Form -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/header"
+            android:orientation="vertical"
+            android:padding="5dip" >
+
+            <!-- Friend's Email Address Label -->
+
+            <TextView
+                android:id="@+id/reg_frnd_email_lbl"
+                style="@style/label_text"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/frnds_email_lbl"
+                android:textColor="#372c24"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/reg_frnd_email"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dip"
+                android:layout_marginTop="5dip"
+                android:inputType="textEmailAddress"
+                android:singleLine="true"
+                android:visibility="gone" />
+
+            <!-- Reminder Description Label -->
+
+            <TextView
+                style="@style/label_text"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/rmnd_dscpt_txt"
+                android:textColor="#372c24" />
+
+            <EditText
+                android:id="@+id/reg_description"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dip"
+                android:layout_marginTop="5dip"
+                android:inputType="textPersonName"
+                android:singleLine="true" />
+            <!-- Radius Label -->
+
+            <TextView
+                style="@style/label_text"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/radius_txt"
+                android:textColor="#372c24" />
+
+            <EditText
+                android:id="@+id/reg_radius"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dip"
+                android:layout_marginTop="5dip"
+                android:inputType="numberDecimal"
+                android:singleLine="true" />
+            <!-- Loaction Label -->
+
+            <TextView
+                style="@style/label_text"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/loc_txt"
+                android:textColor="#372c24" />
+
+            <EditText
+                android:id="@+id/reg_location"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:inputType="textPostalAddress"
+                android:singleLine="true" />
+            <!-- Set Reminder Button -->
+
+            <TextView
+                android:id="@+id/register_error"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dip"
+                android:textColor="#e30000"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnSetReminder"
+                style="@style/button_text"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:background="@drawable/button_style"
+                android:text="@string/set_rmnd_btn_lbl" />
+            <!-- Link to Login Screen -->
+
+        </LinearLayout>
+        <!-- Registration Form Ends -->
+
+    </RelativeLayout>
+
+</ScrollView>
